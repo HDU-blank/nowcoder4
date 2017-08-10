@@ -1,4 +1,4 @@
-function maxVolum(arr){
+function waterProblem (arr){
     var left = 0,
         right =arr.length-1,
         max = 0,
@@ -26,4 +26,4 @@ function maxVolum(arr){
         }
         return max;
 }
-maxVolum([3,1,2,4]);
+waterProblem ([3,1,2,4]);

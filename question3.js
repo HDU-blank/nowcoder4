@@ -1,4 +1,4 @@
-function max(arr){
+function twoSubArrayMaxSum(arr){
     var cur = 0,
         max = -1000000,
         maxSum = -100000,
@@ -20,4 +20,4 @@ function max(arr){
     }
     return maxSum;
 }
-max([-1,3,4,-9,1,2]);
+twoSubArrayMaxSum([-1,3,4,-9,1,2]);
