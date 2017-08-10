@@ -1,4 +1,7 @@
 function maxArraySum(arr){
+    if (arr = null || arr.length==0){
+        return 0;
+    }
     var cur = 0,
         max = -1000000;
     for(var i = 0;i<arr.length;i++){
@@ -9,10 +12,13 @@ function maxArraySum(arr){
     return max;
 }
 function maxMatrixSum(arr){
+    if (arr = null || arr.length == 0 || arr[0].length == 0){
+        return 0;
+    }
     var cur = 0,
-        max = -1000000;
-    var len = arr[0].length;
-    var newArr = Array.apply(null, Array(len)).map(function(item, i) {
+        max = -1000000,
+        len = arr[0].length,
+        newArr = Array.apply(null, Array(len)).map(function(item, i) {
         return 0;
     });
     for (var i = 0;i<arr.length;i++){

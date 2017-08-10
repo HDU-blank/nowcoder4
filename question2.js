@@ -1,4 +1,7 @@
 function waterProblem (arr){
+    if (arr = null || arr.length==0){
+        return 0;
+    }
     var left = 0,
         right =arr.length-1,
         max = 0,

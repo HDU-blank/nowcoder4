@@ -19,6 +19,9 @@
 ###### code：
 ```
 function maxArraySum(arr){
+    if (arr = null || arr.length==0){
+        return 0;
+    }
     var cur = 0,
         max = -1000000;
     for(var i = 0;i<arr.length;i++){
@@ -29,6 +32,9 @@ function maxArraySum(arr){
     return max;
 }
 function maxMatrixSum(arr){
+    if (arr = null || arr.length == 0 || arr[0].length == 0){
+        return 0;
+    }
     var cur = 0,
         max = -1000000;
     var len = arr[0].length;
@@ -63,6 +69,9 @@ maxMatrixSum([[-90,48,78],[64,-40,64],[-81,-7,66]]);
 ###### code：
 ```
 function waterProblem (arr){
+    if (arr = null || arr.length==0){
+        return 0;
+    }
     var left = 0,
         right =arr.length-1,
         max = 0,
