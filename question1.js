@@ -1,5 +1,5 @@
 function maxArraySum(arr){
-    if (arr = null || arr.length==0){
+    if (arr == null || arr.length==0){
         return 0;
     }
     var cur = 0,
@@ -12,7 +12,7 @@ function maxArraySum(arr){
     return max;
 }
 function maxMatrixSum(arr){
-    if (arr = null || arr.length == 0 || arr[0].length == 0){
+    if (arr == null || arr.length == 0 || arr[0].length == 0){
         return 0;
     }
     var cur = 0,

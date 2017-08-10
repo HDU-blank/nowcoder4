@@ -1,5 +1,5 @@
 function waterProblem (arr){
-    if (arr = null || arr.length==0){
+    if (arr == null || arr.length==0){
         return 0;
     }
     var left = 0,
