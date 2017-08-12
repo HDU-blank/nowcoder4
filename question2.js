@@ -8,19 +8,19 @@ function waterProblem (arr){
         i = 0,
         j = arr.length-1;
         
-        while (i != j){
+         while ((i-1) != j){
             if (arr[left]<=arr[right]){
                 if(arr[left]<arr[i]){
+                    left = i;
                     i++;
-                    left++;
                 }else{
                     max += arr[left]-arr[i];
                     i++;
                 }
             }else{
                 if(arr[right]<arr[j]){
+                    right = j;
                     j--;
-                    right--;
                 }else{
                     max += arr[right]-arr[j];
                     j--;
